@@ -1,0 +1,213 @@
+/* 기본 초기화 및 폰트 설정 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'NeoDunggeunmo', 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* 반응형 컨테이너: 모바일 사이즈 중심, 화면이 커져도 맥스폭 유지 */
+.container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #0d1117;
+    /* 세로 스트라이프 배경 이펙트 */
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 4px 100%;
+    border: 1px solid #333;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+/* 붉은색 강조 공통 */
+.highlight-red {
+    color: #ff2a2a;
+}
+
+/* 헤더 스타일 */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.header-pagination {
+    letter-spacing: -2px;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 60%;
+}
+
+/* 로고 영역 */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px dashed #ff2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+/* 가상의 눈 모양 로고 아이콘 */
+.eye-shape {
+    width: 30px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+.eye-shape::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff2a2a;
+    border-radius: 50%;
+    left: 10px;
+    top: 2.5px;
+}
+
+.logo-title {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* 검색창 */
+.search-bar {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    background-color: #fff;
+    border: none;
+    height: 35px;
+}
+
+.search-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* 구분선 */
+.content {
+    border-top: 1px solid #555;
+    padding-top: 15px;
+}
+
+.category {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+
+.main-title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    word-break: keep-all;
+}
+
+/* 우측 상단 유틸리티 링크 */
+.utility-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* 정보 테이블 스타일 */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.info-table th, .info-table td {
+    border: 1px solid #22344c;
+    padding: 10px;
+    text-align: center;
+}
+
+.info-table th {
+    background-color: #386184;
+    color: #ffffff;
+    width: 35%;
+}
+
+.info-table td {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* 본문 텍스트 스타일 */
+.description-box {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.quote-text {
+    font-style: italic;
+    color: #ddd;
+    border-left: 3px double #fff;
+    padding-left: 12px;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.main-text p {
+    margin-bottom: 8px;
+}
+
+/* 취소선 스타일 */
+.strikethrough {
+    text-decoration: line-through;
+    text-decoration-color: #ffffff;
+    color: #aaa;
+}
+
+/* 하단 날카로운 스파이크 이펙트 (CSS 데코레이션) */
+.spike-effect {
+    margin-top: 40px;
+    height: 30px;
+    background: linear-gradient(135deg, transparent 50%, #0d1117 50%) 0 0,
+                linear-gradient(225deg, transparent 50%, #0d1117 50%) 0 0;
+    background-color: #1a0000; /* 하단에 은은한 붉은 광원 효과 처럼 연출 */
+    background-size: 15px 30px;
+    transform: rotate(180deg);
+}
