@@ -283,7 +283,7 @@ body {
   gap: 15px;
 }
 
-.logo-icon {
+/* .logo-icon {
   width: 45px;
   height: 45px;
   border: 2px dashed #ff2a2a;
@@ -309,7 +309,7 @@ body {
   border-radius: 50%;
   left: 9px;
   top: 2.5px;
-}
+} */
 
 .logo-title {
   font-size: 28px;

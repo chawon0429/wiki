@@ -109,7 +109,7 @@ function renderList() {
   if (currentSortType === "code") {
     filteredData.sort((a, b) => a.code.localeCompare(b.code));
   } else if (currentSortType === "grade") {
-    filteredData.sort((a, b) => a.gradeWeight - b.gradeWeight);
+    filteredData.sort((a, b) => b.gradeWeight - a.gradeWeight);
   }
 
   // 3. 동적 HTML 엘리먼트 빌드
