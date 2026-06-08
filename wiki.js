@@ -24,7 +24,7 @@ let wikiData = [
     agency: "(주)백일몽",
     category: "어둠",
     grade: "어스름(D)",
-    gradeWeight: 1, // 정렬용 가중치 (낮을수록 높은 등급 처리)
+    gradeWeight: 3, // 정렬용 가중치 (높을수록 높은 등급 처리)
     quote:
       "“ 잠들었다 깨어 보니 지하철 안.\n마치 퇴근길 같지만, 어딘가,\n이상한 역명들이 들려오기 시작한다-. ”",
     body: `<p>&lt;<span class="highlight-red">어둠탐사기록</span>&gt;에 등장하는 괴담.</p>
@@ -37,25 +37,125 @@ let wikiData = [
   },
   {
     id: 2,
-    code: "Abyss-C-04",
-    title: "[종점행 귀신 신호]",
-    agency: "불명",
+    code: "Qterw-F-243",
+    title: "[선택해 줘]",
+    agency: "(주)백일몽",
     category: "어둠",
-    grade: "짙은어둠(C)",
-    gradeWeight: 2,
-    quote: "“ 이 선로의 끝에는 역이 존재하지 않는다. ”",
-    body: "<p>자정 이후 끊어진 선로 위에서 감지되는 정체불명의 주파수 괴담.</p>",
+    grade: "그늘(F)",
+    gradeWeight: 1,
+    quote: "",
+    body: `<p>&lt;<span class="highlight-red">어둠탐사기록</span>&gt;에 등장하는 괴담.</p>
+               <p><span class="highlight-red">백일몽 주식회사</span>의 식별코드는 Qterw-F-243.</p>
+               <br>
+               <p>인터넷에서 유행했던 '공포체험하고 돈 받기 VS 그냥 살기' 류의 밸런스 게임 선택지에서 파생된 어둠.</p>
+               <p>특정 숫자가 포함된 URL에 접속할 시 비정기적으로 발생한다.</p>
+               <br>
+               <p>주로 살인마에게 쫓기건 귀신에게 쫓기게 되며, 잡힐 시 처음부터 다시 시작된다.</p>`,
   },
   {
     id: 3,
-    code: "Void-B-09",
-    title: "[거꾸로 걷는 안내원]",
+    code: "Qterw-A-104",
+    title: "[산제물의 합창가]",
     agency: "(주)백일몽",
-    category: "인간형",
-    grade: "심연(B)",
+    category: "어둠",
+    grade: "암흑(A)",
+    gradeWeight: 6,
+    quote: "",
+    body: `<p>&lt;<span class="highlight-red">어둠탐사기록</span>&gt;에 등장하는 괴담.</p>
+               <p><span class="highlight-red">백일몽 주식회사</span>의 식별코드는 Qterw-A-104.</p>
+               <br>
+               <p><span class="highlight-red">암흑(A) 등급</span> 어둠.</p>
+               <p>수많은 사상자를 냈던 등급 재조정 사태의 시발점.</p>
+               <br>
+               <p>현재 공식적인 생존자 기록 없음.</p>`,
+  },
+  {
+    id: 4,
+    code: "Qterw-D-210",
+    title: "[삐에로는 널 싫어해]",
+    agency: "(주)백일몽",
+    category: "어둠",
+    grade: "어스름(D)",
     gradeWeight: 3,
-    quote: "“ 절대 그녀의 앞모습을 정면으로 쳐다보지 마십시오. ”",
-    body: "<p>심연교통공사 구역 내의 유일한 에스코트 유형의 위험 개체.</p>",
+    quote: "",
+    body: `<p>&lt;<span class="highlight-red">어둠탐사기록</span>&gt;에 등장하는 괴담.</p>
+               <p><span class="highlight-red">백일몽 주식회사</span>의 식별코드는 Qterw-D-210.</p>
+               <br>
+               <p>각종 광대 초상화가 걸린 복도가 끝없이 이어지는 곳에서 영원히 떠도는 괴담.</p>
+               <p>자세히 보면 진짜 광대 분장이 아니라 광대처럼 보이도록 기괴하게 뒤틀린 사람들이 억지로 웃는 얼굴이다.</p>
+               `,
+  },
+  {
+    id: 5,
+    code: "Qterw-B-11",
+    title: "[유쾌 테마파크!]",
+    agency: "(주)백일몽",
+    category: "어둠",
+    grade: "어둑(B)",
+    gradeWeight: 5,
+    quote: "",
+    body: `<p>&lt;<span class="highlight-red">어둠탐사기록</span>&gt;에 등장하는 괴담.</p>
+               <p><span class="highlight-red">백일몽 주식회사</span>의 식별코드는 Qterw-B-11.</p>
+               <br>
+               <p>각종 판타지 랜드를 테마로 하는 보드게임 속 놀이공원.</p>
+               <p>이 괴담에 진입한 이후 세 가지 대형 어트랙션을 이용하면 귀가할 수 있다.</p>
+               <br>
+               <p>해당 보드게임을 플레이한 사람들이 착란상태에서 작성한 '유쾌 테마파크 이용 지침서'라는 부록으로 더 유명해진 괴담.</p>
+               <br>
+               <p>해당 괴담을 원작으로 하는 게임을 찾는다면 이 링크로.</p>`,
+  },
+  {
+    id: 6,
+    code: "Qterw-C-402",
+    title: "[내가 죽은 날]",
+    agency: "(주)백일몽",
+    category: "어둠",
+    grade: "거미(C)",
+    gradeWeight: 4,
+    quote: "",
+    body: `<p>&lt;<span class="highlight-red">어둠탐사기록</span>&gt;에 등장하는 괴담.</p>
+               <p><span class="highlight-red">백일몽 주식회사</span>의 식별코드는 Qterw-C-402.</p>
+               <br>
+               <p>흥행하지 못한 스릴러·미스터리 이야기 속에 끌려 들어와 희생자가 되는 괴담.</p>
+               <p>첫 목격자는 반드시 이미 희생당한 자신의 시체를 발견하게 된다.</p>
+               <br>
+               <p>탐사는 총 25회까지 기록되었다.</p>
+               `,
+  },
+  {
+    id: 7,
+    code: "Qterw-C-51",
+    title: "[山君님]",
+    agency: "(주)백일몽",
+    category: "어둠",
+    grade: "거미(C)",
+    gradeWeight: 4,
+    quote: "",
+    body: `<p>&lt;<span class="highlight-red">어둠탐사기록</span>&gt;에 등장하는 괴담.</p>
+               <p><span class="highlight-red">백일몽 주식회사</span>의 식별코드는 Qterw-C-51.</p>
+               <br>
+               <p>창귀를 소재로 그린 수묵화의 음산한 어둠.</p>
+               <p>탐사는 총 17회까지 기록되었다.</p>
+               `,
+  },
+  {
+    id: 8,
+    code: "Qterw-B-666",
+    title: "[눈먼 자들의 저택]",
+    agency: "(주)백일몽",
+    category: "어둠",
+    grade: "어둑(B)",
+    gradeWeight: 5,
+    quote: "",
+    body: `<p>&lt;<span class="highlight-red">어둠탐사기록</span>&gt;에 등장하는 괴담으로,</p>
+               <p><span class="highlight-red">백일몽 주식회사</span>의 식별코드는 Qterw-B-666이라고 합니다.</p>
+               <br>
+               <p>안녕하세요, 손님. 오늘은 당신을 멋진 전시회에 초대하기 위해 이 글을 적어봅니다.</p>
+               <p>찾아오시는 길이 번거롭지 않도록, 이 글을 읽으신 후에는 어디로 향하시든 저희 전시회에 도착하시게 될 겁니다.</p><br>
+               <p>이전분들의 방문 기록은 해당 문서에 106회까지 기록되어 있습니다.</p>
+               <p>그리고 본 괴담에 대하여 기록하려는 모든 시도에서, 전시회에서 보낸 안내문의 형태로 글이 변형 되었다고 합니다.</p>
+               <p>이렇게 초대하게 되어 영광입니다.</p>
+               `,
   },
 ];
 
